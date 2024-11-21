@@ -1,10 +1,11 @@
-# PROJETO FACULDADE - nome ficticio:
+# PROJETO FACULDADE
 
-**EFICAZES**
-
-# Recriacao do projeto->
+### Recriacao do projeto
 
 **GABINE HEADSET**
+** nome ficticio do nosso:** EFICAZES
+
+---
 
 ![Banner do Projeto](<(frontend/assets/images/Capa.png)> "Imagem de capa do figma utilizado para recriação")
 
@@ -32,6 +33,8 @@
 - [Axios](https://router.vuejs.org/)
 - [CSS](https://www.w3schools.com/cssref/index.php)
 - [Tailwind](https://tailwindcss.com/)
+- [C#](https://learn.microsoft.com/pt-br/dotnet/csharp/tour-of-csharp/overview)
+- [Javascript](hhttps://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 ---
 
@@ -85,7 +88,22 @@ Para executar o projeto, você precisará dos seguintes requisitos:
 
 ---
 
-## 📂 **Estrutura do Projeto**
+## Grupo Eficazes
+
+### Integrantes
+
+```bash
+Higor Miguel Pavim Lopes | RA ->1971780
+Lucas Garcia Ribeiro | RA ->1971977
+Luiz Fernando Ferreira do Carmo | RA ->1965671
+João Victor Marque Seixas | RA ->1974858
+Josué Miguel Ramos de Souza | RA ->1976990
+Julio Cesar Golfredo Carneiro | RA ->1963824
+```
+
+---
+
+## 📂 **Estrutura do Projeto - Abra um editor de texto**
 
 EFICAZES/
 ├── frontend/
@@ -167,18 +185,3 @@ EFICAZES/
 │ │ └── Services/
 │ │ ├── AuthService.cs
 │ │ └── TokenService.cs
-
----
-
-## Grupo Eficazes
-
-### Integrantes
-
-```bash
-Higor Miguel Pavim Lopes | RA ->1971780
-Lucas Garcia Ribeiro | RA ->1971977
-Luiz Fernando Ferreira do Carmo | RA ->1965671
-João Victor Marque Seixas | RA ->1974858
-Josué Miguel Ramos de Souza | RA ->1976990
-Julio Cesar Golfredo Carneiro | RA ->1963824
-```
