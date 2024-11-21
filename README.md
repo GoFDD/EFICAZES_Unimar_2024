@@ -43,7 +43,7 @@
 ### Clone este repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/seu-repo.git
+git clone https://github.com/GoFDD/EFICAZES_Unimar_2024
 ```
 
 ### Acesse o diretório do projeto:
@@ -87,6 +87,27 @@ Para executar o projeto, você precisará dos seguintes requisitos:
 MySQL
 Ferramenta de linha de comando dotnet format e dotnet ef
 ```
+
+## Conexão do Banco de Dados:
+
+**Instruções para Configuração do Banco de Dados:**
+
+1. Criar o Banco de Dados no MySQL
+
+   - Abra o o MySQL e execute o seguinte comando para criar o banco de dados:
+     CREATE DATABASE NOME_BANCO_AQUI;
+
+2. Configurar a Conexão no Arquivo de Configuração
+
+   - Navegue até a pasta Presentation e localize o arquivo chamado appsettings.json.
+   - Abra o arquivo e localize a seção DefaultConnection. Atualize-a com as informações do seu banco de dados, exemplo:
+     "DefaultConnection": "server=localhost;user id=root;password=SENHA_AQUI;database=NOME_BANCO_AQUI"
+
+3. Atualizar o Banco de Dados com Entity Framework
+   - No terminal, navegue até a pasta Infrastructure usando o comando:
+     cd Infrastructure
+   - Em seguida, execute o seguinte comando para aplicar as migrações e atualizar o banco de dados:
+     dotnet ef database update -s ../Presentation/Presentation.csproj
 
 ---
 
