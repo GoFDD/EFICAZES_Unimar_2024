@@ -105,7 +105,7 @@ Julio Cesar Golfredo Carneiro | RA ->1963824
 
 ---
 
-## 📂 **Estrutura do Projeto - Abra um editor de texto**
+## 📂 **Estrutura do Projeto - Necessario abrir o readme em um Editor de texto**
 
 EFICAZES/
 ├── frontend/
