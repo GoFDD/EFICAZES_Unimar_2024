@@ -3,7 +3,7 @@
 ### Recriacao do projeto
 
 **GABINE HEADSET**
-** nome ficticio do nosso:** EFICAZES
+**nome ficticio do nosso:** EFICAZES
 
 ---
 
@@ -82,9 +82,9 @@ A estrutura do projeto é organizada em várias camadas, cada uma com responsabi
 
 Para executar o projeto, você precisará dos seguintes requisitos:
 
-> .NET SDK 8.0
-> MySQL
-> Ferramenta de linha de comando dotnet format e dotnet ef
+.NET SDK 8.0
+MySQL
+Ferramenta de linha de comando dotnet format e dotnet ef
 
 ---
 
