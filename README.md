@@ -7,7 +7,7 @@
 
 ---
 
-![Banner do Projeto](<(frontend/assets/images/Capa.png)> "Imagem de capa do figma utilizado para recriação")
+![Banner do Projeto](<(https://www.figma.com/proto/4K4fO1eAHq3Rx3jaypyPXg/LP-UNIMAR---EFICAZ?node-id=48-1016&node-type=frame&t=HvfhzpKLRGLbOQoG-0&scaling=contain&content-scaling=fixed&page-id=46%3A7989)> "Imagem de capa do figma utilizado para recriação")
 
 ## 📚 **Descrição**
 
