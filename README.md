@@ -69,11 +69,11 @@ A estrutura do projeto é organizada em várias camadas, cada uma com responsabi
 
 **Application:** Contém a lógica de negócios e serviços.
 
-**Core:**Inclui as entidades de domínio, DTOs (Data Transfer Objects) e interfaces de repositórios.
+**Core:** Inclui as entidades de domínio, DTOs (Data Transfer Objects) e interfaces de repositórios.
 
-**Infrastructure:**Gerencia a camada de dados, incluindo a configuração do Entity Framework Core, o contexto do banco de dados e as migrações.
+**Infrastructure:** Gerencia a camada de dados, incluindo a configuração do Entity Framework Core, o contexto do banco de dados e as migrações.
 
-**Presentation:**Contém a API Web, controladores e configurações da aplicação.
+**Presentation:** Contém a API Web, controladores e configurações da aplicação.
 
 ## Requisitos
 
