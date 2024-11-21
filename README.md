@@ -1,6 +1,10 @@
-# PROJETO FACULDADE - nome ficticio: EFICAZES
+# PROJETO FACULDADE - nome ficticio:
 
-# Recriacao do projeto -> ** GABINE HEADSET**
+**EFICAZES**
+
+# Recriacao do projeto->
+
+**GABINE HEADSET**
 
 ![Banner do Projeto](<(frontend/assets/images/Capa.png)> "Imagem de capa do figma utilizado para recriação")
 
@@ -63,13 +67,21 @@ npm run dev
 
 A estrutura do projeto é organizada em várias camadas, cada uma com responsabilidades bem definidas:
 
-### Application: Contém a lógica de negócios e serviços.
+### Application:
 
-### Core: Inclui as entidades de domínio, DTOs (Data Transfer Objects) e interfaces de repositórios.
+Contém a lógica de negócios e serviços.
 
-### Infrastructure: Gerencia a camada de dados, incluindo a configuração do Entity Framework Core, o contexto do banco de dados e as migrações.
+### Core:
 
-### Presentation: Contém a API Web, controladores e configurações da aplicação.
+Inclui as entidades de domínio, DTOs (Data Transfer Objects) e interfaces de repositórios.
+
+### Infrastructure:
+
+Gerencia a camada de dados, incluindo a configuração do Entity Framework Core, o contexto do banco de dados e as migrações.
+
+### Presentation:
+
+Contém a API Web, controladores e configurações da aplicação.
 
 ## Requisitos
 
