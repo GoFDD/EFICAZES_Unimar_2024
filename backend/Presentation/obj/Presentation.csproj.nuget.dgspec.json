@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\Presentation.csproj": {}
+    "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\Presentation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Application\\Application.csproj": {
+    "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Application\\obj\\",
+        "outputPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj"
+              "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj": {
+    "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj",
+        "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\obj\\",
+        "outputPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -126,14 +126,14 @@
         }
       }
     },
-    "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -154,11 +154,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Application\\Application.csproj"
+              "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Application\\Application.csproj"
               },
-              "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj"
+              "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj"
               }
             }
           }
@@ -202,14 +202,14 @@
         }
       }
     },
-    "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\Presentation.csproj",
+        "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\Presentation.csproj",
         "packagesPath": "C:\\Users\\julio\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\obj\\",
+        "outputPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -230,11 +230,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Core\\Core.csproj"
+              "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Core\\Core.csproj"
               },
-              "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }

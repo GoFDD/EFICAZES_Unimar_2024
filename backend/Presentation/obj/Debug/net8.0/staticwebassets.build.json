@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qATwNOhfiF6l2vecItwDgaKmREOdKSnowoMoG+J2ZrY=",
+  "Hash": "HQNboL0q9bhrbln8AFVEK9Cdogwqe2tFMBUSgioQxX8=",
   "Source": "Presentation",
   "BasePath": "_content/Presentation",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Presentation\\wwwroot",
       "Source": "Presentation",
-      "ContentRoot": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\wwwroot\\clientes\\75b4eea5-5fdb-4868-bc7b-97453b0430f9.jpg",
+      "Identity": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\wwwroot\\clientes\\75b4eea5-5fdb-4868-bc7b-97453b0430f9.jpg",
       "SourceId": "Presentation",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\wwwroot\\",
       "BasePath": "_content/Presentation",
       "RelativePath": "clientes/75b4eea5-5fdb-4868-bc7b-97453b0430f9.jpg",
       "AssetKind": "All",

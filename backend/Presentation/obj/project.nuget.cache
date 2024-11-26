@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rDml5l3eExu8fP/JkmzOhJTGeDNx3vNPr0/wOZyeHAiqpJllhKX6paXfTvksRxJYuWdDgguDsuspW0x2boa3gg==",
+  "dgSpecHash": "h8rbfRhTvg8ELCTXP31cTY6J9E//uW2Wg6MoBngBfcYJXze3NIlGBMj/91vRKy2mSyXWiyFO5f+VAFgg16YPDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julio\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",

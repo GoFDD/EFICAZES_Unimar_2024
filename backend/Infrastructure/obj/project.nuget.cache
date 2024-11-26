@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3YEVqRyDh7zTmVOeNRHBOlRH0XNVWlhM1IJlZt/1is+Lhw4P0jgX9IJLV0eAADw6eOXB03H9jBagdClfgKOvhQ==",
+  "dgSpecHash": "7twsB0/IetCN0Bv8QZ5zhohjtc/bka3lcL6cHOye2EJf6WTDLPv5gMbQf/uUdgumHQfzUQi/JDS4qKLP4pdw9A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julio\\Downloads\\Eficazes - projeto (2)\\Eficazes - projeto\\backend\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\julio\\Desktop\\Eficazes_P2_Faculdade\\EFICAZES_Unimar_2024\\backend\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.10\\microsoft.entityframeworkcore.8.0.10.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.10\\microsoft.entityframeworkcore.abstractions.8.0.10.nupkg.sha512",

@@ -1,30 +1,33 @@
 <script setup>
-import { ref } from 'vue';
-import PostUserDataService from '@/services/PostUserDataService';
-import useAuth from '@/stores/auth.js';
+import { ref } from "vue";
+import PostUserDataService from "@/services/PostUserDataService";
+import useAuth from "@/stores/auth.js";
 
 const users = ref([]);
 const newUser = ref({
-  nome: '',
-  apelido: '',
-  email: '',
-  senha: '',
-  cpf: '',
-  dataNascimento: '',
-  genero: '',
-  telefone: '',
-  endereco: []
+  nome: "",
+  apelido: "",
+  email: "",
+  senha: "",
+  cpf: "",
+  dataNascimento: "",
+  genero: "",
+  telefone: "",
+  endereco: [],
 });
 
+// Criação do Usuario
 const createUser = async () => {
-
   try {
     const enderecos = newUser.value.endereco;
     delete newUser.value.endereco;
 
     await PostUserDataService.create(newUser.value);
 
-    const token = await PostUserDataService.login({ email: newUser.value.email, senha: newUser.value.senha }).then((response) => response.data);
+    const token = await PostUserDataService.login({
+      email: newUser.value.email,
+      senha: newUser.value.senha,
+    }).then((response) => response.data);
 
     const auth = useAuth();
 
@@ -36,46 +39,92 @@ const createUser = async () => {
       address.userId = newUser.value.id;
       await PostUserDataService.createAddress(address);
     }
-
   } catch (error) {
-    console.error('Erro ao criar usuário:', error);
+    console.error("Erro ao criar usuário:", error);
   }
-
 };
 
 const isVisible = ref(false);
 
 function formAddress() {
+  const { nome, apelido, email, senha, cpf, dataNascimento, genero, telefone } =
+    newUser.value;
 
-  const { nome, apelido, email, senha, cpf, dataNascimento, genero, telefone } = newUser.value
-
-  if (nome && apelido && email && senha && cpf && dataNascimento && genero && telefone) {
+  if (
+    nome &&
+    apelido &&
+    email &&
+    senha &&
+    cpf &&
+    dataNascimento &&
+    genero &&
+    telefone
+  ) {
     isVisible.value = true;
   }
+}
+ // FORMATAÇÕES
+function formatarCPF(event) {
+  let valor = event.target.value;
 
+  
+  valor = valor.replace(/\D/g, '');
+
+  
+  valor = valor.slice(0, 11);
+
+  if (valor.length > 3) valor = valor.replace(/(\d{3})(\d)/, '$1.$2');
+  if (valor.length > 6) valor = valor.replace(/(\d{3})\.(\d{3})(\d)/, '$1.$2.$3');
+  if (valor.length > 9) valor = valor.replace(/(\d{3})\.(\d{3})\.(\d{3})(\d)/, '$1.$2.$3-$4');
+
+  event.target.value = valor;
+  newUser.value.cpf = valor;
+} //FIMcpf
+
+function formatarTelefone(event) {
+  let valor = event.target.value;
+
+  
+  valor = valor.replace(/\D/g, '');
+
+  valor = valor.slice(0, 11);
+  if (valor.length > 10) {
+    
+    valor = valor.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+  } else if (valor.length > 6) {
+    
+    valor = valor.replace(/(\d{2})(\d{4})(\d{4})/, '($1) $2-$3');
+  } else if (valor.length > 2) {
+    
+    valor = valor.replace(/(\d{2})(\d)/, '($1) $2');
+  }
+  event.target.value = valor;
+  newUser.value.telefone = valor;
 }
 
+
+// PARTE DO ENDERECO ABAIXO 
 function formRegistration() {
   isVisible.value = false;
 }
 
 const listaEndereco = ref({
-  nomeRua: '',
-  bairro: '',
-  cep: '',
-  complemento: '',
-  cidade: '',
-  numeroResidencia: ''
+  nomeRua: "",
+  bairro: "",
+  cep: "",
+  complemento: "",
+  cidade: "",
+  numeroResidencia: "",
 });
 
 function adicionarEndereco() {
   newUser.value.endereco.push({ ...listaEndereco.value });
-  listaEndereco.value.nomeRua = '';
-  listaEndereco.value.bairro = '';
-  listaEndereco.value.cep = '';
-  listaEndereco.value.complemento = '';
-  listaEndereco.value.cidade = '';
-  listaEndereco.value.numeroResidencia = '';
+  listaEndereco.value.nomeRua = "";
+  listaEndereco.value.bairro = "";
+  listaEndereco.value.cep = "";
+  listaEndereco.value.complemento = "";
+  listaEndereco.value.cidade = "";
+  listaEndereco.value.numeroResidencia = "";
 }
 
 const isVisibleAddress = ref(false);
@@ -87,9 +136,9 @@ function ocultaEndereco() {
   isVisibleAddress.value = false;
 }
 </script>
-
 <template>
   <main class="registro" v-if="!isVisible">
+    <!--NAV -->
     <nav>
       <div class="flex mt-7 mb-8 border-b">
         <p class="relative ml-20 mr-20 pb-3 text-transparent bg-gradient-to-r from-[#03B1FF] to-[#97C4D8] bg-clip-text">
@@ -101,6 +150,8 @@ function ocultaEndereco() {
         </p>
       </div>
     </nav>
+    <!-- FimNAV -->
+    <!--Form 01 - Pessoais-->
     <div class="registro grid md:grid-cols-5 md:gap-4 ml-5 mr-5">
       <div class="col-span-1 imgPerfil">
         <img src="../assets/images/fotoPerfil.png" alt="" class="mx-auto">
@@ -109,7 +160,7 @@ function ocultaEndereco() {
         <div class="flex flex-col col-span-1 gap-2 max-w-[36rem] w-full mx-auto">
           <label>Nome completo</label>
           <div class="flex">
-            <input type="text" v-model="newUser.nome" id="nomeCompleto" placeholder="Ex: Eduardo Evaristo"
+            <input type="text" v-model="newUser.nome" id="nomeCompleto" placeholder="Ex: Test nome"
               class="w-full campos" required></input>
             <svg class="h-11 w-11 icons" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -119,7 +170,7 @@ function ocultaEndereco() {
 
           <label>Apelido</label>
           <div class="flex">
-            <input type="text" v-model="newUser.apelido" id="apelido" placeholder="Ex: edueevaristo"
+            <input type="text" v-model="newUser.apelido" id="apelido" placeholder="Ex: Testador"
               class="w-full campos" required></input>
             <svg class="h-11 w-11 icons" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -129,7 +180,7 @@ function ocultaEndereco() {
 
           <label>E-mail</label>
           <div class="flex">
-            <input type="email" v-model="newUser.email" id="email" placeholder="Ex: eduardo@gmail.com"
+            <input type="email" v-model="newUser.email" id="email" placeholder="Ex: teste@gmail.com"
               class="w-full campos" required></input>
             <svg class="h-11 w-11 icons" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -152,7 +203,7 @@ function ocultaEndereco() {
         <div class="flex flex-col col-span-1 gap-2 max-w-[36rem] w-full mx-auto">
           <label>CPF</label>
           <div class="flex">
-            <input type="text" v-model="newUser.cpf" id="email" placeholder="Ex: 000.000.000-00" class="w-full campos"
+            <input type="text" v-model="newUser.cpf" id="email" placeholder="Ex: 000.000.000-00" @input="formatarCPF" class="w-full campos"
               required></input>
             <svg class="h-11 w-11 icons" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
               stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -191,7 +242,7 @@ function ocultaEndereco() {
           <label>Telefone</label>
           <div class="flex">
             <input type="text" v-model="newUser.telefone" id="telefone" placeholder="Ex: (00) 0000-0000"
-              class="w-full campos" required></input>
+              class="w-full campos" required @input="formatarTelefone"></input>
             <svg class="h-11 w-11 icons" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
               stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
@@ -199,14 +250,40 @@ function ocultaEndereco() {
                 d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
             </svg>
           </div>
+          <label>Foto de Perfil</label>
+          <div class="flex">
+            <input
+              type="file"
+              @change="handleFileUpload"
+              accept="image/*"
+              class="w-full campos"
+              required
+            />
+            <svg
+              class="h-11 w-11 icons"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+              />
+            </svg>
+          </div>
         </div>
+        
         <div class="text-right col-span-2">
           <router-link to="/"><button class="button"><b>Voltar ao início</b></button></router-link>
           <button type="submit" class="button" @click="formAddress"><b>Próximo Passo</b></button>
         </div>
       </form>
+      <!--FIMform -->
     </div>
   </main>
+  <!--Endereco -->
   <main class="cadastroEndereco" v-if="isVisible">
     <nav>
       <div class="flex mt-7 mb-8 border-b">
@@ -275,19 +352,19 @@ function ocultaEndereco() {
             </svg>
           </div>
           <label>Cidade</label>
-          <div class="flex">
-            <input type="text" name="cidade" v-model="listaEndereco.cidade" placeholder="Ex: Ubatuba"
-              class="w-full campos" required></input>
-            <svg class="h-11 w-11 icons" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
-              stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" />
-              <path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8" />
-              <line x1="13" y1="7" x2="13" y2="7.01" />
-              <line x1="17" y1="7" x2="17" y2="7.01" />
-              <line x1="17" y1="11" x2="17" y2="11.01" />
-              <line x1="17" y1="15" x2="17" y2="15.01" />
-            </svg>
-          </div>
+            <div class="flex">
+              <input type="text" name="cidade" v-model="listaEndereco.cidade" placeholder="Ex: Ubatuba"
+                class="w-full campos" required></input>
+              <svg class="h-11 w-11 icons" width="24" height="24" viewBox="0 0 24 24" stroke-width="2"
+                stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" />
+                <path d="M8 9l5 5v7h-5v-4m0 4h-5v-7l5 -5m1 1v-6a1 1 0 0 1 1 -1h10a1 1 0 0 1 1 1v17h-8" />
+                <line x1="13" y1="7" x2="13" y2="7.01" />
+                <line x1="17" y1="7" x2="17" y2="7.01" />
+                <line x1="17" y1="11" x2="17" y2="11.01" />
+                <line x1="17" y1="15" x2="17" y2="15.01" />
+              </svg>
+            </div>
           <label>Número da residência</label>
           <div class="flex">
             <input type="number" name="numeroResidencia" v-model="listaEndereco.numeroResidencia" placeholder="Ex: 000"
@@ -333,7 +410,7 @@ function ocultaEndereco() {
 
     <div class="text-right mt-14">
       <button class="button" @click="formRegistration"><b>Voltar a etapa anterior</b></button>
-      <router-link to="/"><button class="button" @click="createUser"><b>Salvar</b></button></router-link>
+      <router-link to="/"><button class="submit button" @click="createUser"><b>Salvar</b></button></router-link>
     </div>
   </main>
 </template>
@@ -359,7 +436,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .campos {
   border-radius: 5px 0px 0px 5px;
   color: black;
-  background-color: #F1F3F6;
+  background-color: #f1f3f6;
   padding: 10px;
   margin-bottom: 20px;
 }

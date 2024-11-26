@@ -28,3 +28,19 @@ C:\Users\julio\Downloads\Eficazes - projeto (2)\Eficazes - projeto\backend\Appli
 C:\Users\julio\Downloads\Eficazes - projeto (2)\Eficazes - projeto\backend\Application\obj\Debug\net8.0\refint\Application.dll
 C:\Users\julio\Downloads\Eficazes - projeto (2)\Eficazes - projeto\backend\Application\obj\Debug\net8.0\Application.pdb
 C:\Users\julio\Downloads\Eficazes - projeto (2)\Eficazes - projeto\backend\Application\obj\Debug\net8.0\ref\Application.dll
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\bin\Debug\net8.0\Application.dll
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\bin\Debug\net8.0\Core.dll
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\bin\Debug\net8.0\Core.pdb
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.csproj.AssemblyReference.cache
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.sourcelink.json
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.csproj.CopyComplete
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.dll
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\julio\Desktop\Eficazes_P2_Faculdade\EFICAZES_Unimar_2024\backend\Application\obj\Debug\net8.0\ref\Application.dll
