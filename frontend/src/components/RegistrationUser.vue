@@ -63,7 +63,7 @@ function formAddress() {
     isVisible.value = true;
   }
 }
- // FORMATAÇÕES
+ // FORMATAÇÕES 2.0
 function formatarCPF(event) {
   let valor = event.target.value;
 
